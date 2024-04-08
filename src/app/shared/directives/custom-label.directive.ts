@@ -45,7 +45,7 @@ export class CustomLabelDirective implements OnInit {
     const errors = Object.keys(this._errors)
 
     if (errors.includes('required')){
-      this.htmlElement.nativeElement.innerHTML = "es requerido mamahuevo"
+      this.htmlElement.nativeElement.innerHTML = "es requerido "
       return
     } else if (errors.includes('minlength')){
       const min = this._errors!['minlength']['requiredLength']
@@ -54,7 +54,7 @@ export class CustomLabelDirective implements OnInit {
       this.htmlElement.nativeElement.innerHTML = `Mínimo ${current}/${min} `;
       return
     } else if (errors.includes('email')){
-      this.htmlElement.nativeElement.innerHTML = "tiene que ser un pinche correo"
+      this.htmlElement.nativeElement.innerHTML = "tiene que ser un  correo"
       return
     }
 
